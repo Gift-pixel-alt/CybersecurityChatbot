@@ -74,10 +74,12 @@ namespace CybersecurityChatbot
 
                 if (input.Trim().ToLower() == "exit")
                 {
-                    Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.Green;
-                    TypeText($"Goodbye {name}! Stay safe online.");
+                    Console.WriteLine("\nThank you for using the Cybersecurity Awareness Chatbot!");
+                    Console.WriteLine($"Stay safe online, {name}.");
+                    Console.WriteLine("Remember: Think before you click, share, or respond.");
                     Console.ResetColor();
+
                     break;
                 }
 
@@ -94,24 +96,24 @@ namespace CybersecurityChatbot
         }
 
         static void DisplayLogo()
-{
-    string logoPath = Path.Combine(
-        AppContext.BaseDirectory,
-        "ASCII_Logo.txt"
-    );
+        {
+            string logoPath = Path.Combine(
+                AppContext.BaseDirectory,
+                "ASCII_Logo.txt"
+            );
 
-    if (File.Exists(logoPath))
-    {
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine(File.ReadAllText(logoPath));
-        Console.ResetColor();
-    }
-    else
-    {
-        Console.WriteLine("CYBERSECURITY AWARENESS CHATBOT");
-        Console.WriteLine("STAY SAFE ONLINE");
-    }
-}
+            if (File.Exists(logoPath))
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine(File.ReadAllText(logoPath));
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.WriteLine("CYBERSECURITY AWARENESS CHATBOT");
+                Console.WriteLine("STAY SAFE ONLINE");
+            }
+        }
 
         static void TypeText(string text)
         {
