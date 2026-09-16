@@ -113,7 +113,7 @@ namespace CybersecurityChatbot
             // Default response
             else
             {
-                return "I didn't quite understand that. Could you rephrase?";
+                return $"I'm not sure about that, {UserName}. Try asking me about phishing, passwords, OTPs, scams, safe browsing, malware, social engineering, privacy, or public Wi-Fi.";
             }
         }
     }
