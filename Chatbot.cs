@@ -41,6 +41,12 @@ namespace CybersecurityChatbot
             {
                 return "My purpose is to help South African citizens understand cybersecurity risks and stay safer online.";
             }
+           
+            // Help command
+            else if (message == "help")
+            {
+                return "Available topics: phishing, password safety, OTPs, scams, safe browsing, malware, social engineering, privacy, and public Wi-Fi.";
+            }
 
             // Topics the chatbot can answer
             else if (message.Contains("what can i ask") ||
