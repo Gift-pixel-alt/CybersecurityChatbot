@@ -16,7 +16,7 @@ namespace CybersecurityChatbot
             // Check if the user entered nothing
             if (string.IsNullOrWhiteSpace(input))
             {
-                return "Please enter a question so I can help you.";
+                return $"Please enter a question, {UserName}. I can help you with phishing, passwords, scams, malware, and safe browsing.";
             }
 
             string message = input.ToLower().Trim();
