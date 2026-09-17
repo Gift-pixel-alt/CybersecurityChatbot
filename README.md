@@ -63,3 +63,11 @@ Tekano
 Disclaimer
 
 This chatbot is an educational cybersecurity awareness project. It provides general awareness information and should not be considered professional cybersecurity or legal advice.
+
+## GitHub Actions CI
+
+The project uses GitHub Actions to automatically restore dependencies and build the C# application whenever changes are pushed to the main branch.
+
+The CI workflow completed successfully:
+
+![GitHub Actions successful build](Screenshots/github-actions-success.png)
